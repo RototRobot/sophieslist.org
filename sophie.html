@@ -1,2 +1,142 @@
-﻿<p><img alt="The cat" height="1536" src="images/image0.jpeg" width="2048"></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sophie — Photo Profile</title>
+  <link rel="icon" href="favicon.png">
+  <style>
+    :root {
+      --bg-color: #f8f9fa;
+      --card-bg: #ffffff;
+      --text-color: #202122;
+      --accent-color: #36c;
+      --border-color: #a2a9b1;
+      --header-bg: #ffffff;
+    }
 
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Lato, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: var(--header-bg);
+      border-bottom: 1px solid var(--border-color);
+      padding: 0.75rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .site-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+
+    nav {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text-color);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    nav a:hover {
+      background-color: #f0f0f0;
+      color: var(--accent-color);
+    }
+
+    nav a.active {
+      background-color: #eaf3ff;
+      color: var(--accent-color);
+      font-weight: 600;
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    /* Wikipedia-style Infobox / Card */
+    .profile-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      width: 100%;
+      max-width: 600px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    .profile-card h1 {
+      margin-top: 0;
+      font-family: 'Linux Libertine', 'Georgia', Times, serif;
+      font-weight: normal;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.5rem;
+    }
+
+    .img-container {
+      width: 100%;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      background: #f0f0f0;
+      margin-top: 1rem;
+    }
+
+    .img-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    .caption {
+      font-size: 0.875rem;
+      color: #54595d;
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="site-title">🐾 The Offical Archive</div>
+    <nav>
+      <a href="index.html">Name List</a>
+      <a href="sophie.html" class="active">Gallery</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="profile-card">
+      <h1>Sophie</h1>
+      <div class="img-container">
+        <img alt="The cat Sophie" src="images/image0.jpeg">
+      </div>
+      <p class="caption">The Wonderful Girl herself</p>
+    </article>
+  </main>
+
+</body>
+</html>
